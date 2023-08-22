@@ -123,7 +123,7 @@ main {
 .facts-card-container {
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .facts-card-container .card {
@@ -133,7 +133,7 @@ main {
     padding: 30px;
 }
 
-.facts-card-container .card-title{
+.facts-card-container .card-title {
     font-weight: 600px;
     font-size: 1.25rem;
     margin-top: 5px;
@@ -147,11 +147,11 @@ main {
 }
 
 /* sponsors-styles */
-.sponsors{
+.sponsors {
     text-align: center;
 }
 
-.sponsors-img-container{
+.sponsors-img-container {
     display: flex;
     justify-content: space-evenly;
     margin-top: 50px;
@@ -159,8 +159,52 @@ main {
     gap: 40px;
 }
 
-.sponsors-img-container img{
+.sponsors-img-container img {
     width: 165px;
+}
+
+/* features section */
+.features {
+    display: flex;
+    margin-top: 130px;
+    gap: 100px;
+}
+
+.features .section-title {
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+
+.feature-content .card {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.features-img img{
+    height: 80%;
+    margin-left: 90px;
+}
+
+.badge {
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+
+.badge h2 {
+    font-size: 4rem;
+}
+
+.badge p {
+    font-size: 1.5rem;
 }
 
 
@@ -172,11 +216,21 @@ main {
     }
 
     nav,
+    .features,
     .teams-container,
     .facts-card-container,
-    .sponsors-img-container
-    {
+    .sponsors-img-container {
         flex-direction: column;
+    }
+
+    .features-img img{
+        height: 90%;
+        margin-left: 0;
+    }
+
+    .badge{
+        position: static;
+        max-width: 300px;
     }
 
     .teams-img-container {
@@ -184,13 +238,12 @@ main {
     }
 
     .teams-content,
-    .facts-card-container
-    {
+    .facts-card-container {
         padding-right: 20px;
         padding-left: 20px;
     }
 
-    .facts-card-container{
+    .facts-card-container {
         gap: 20px;
     }
 
@@ -204,9 +257,9 @@ main {
     }
 
     nav,
+    .features,
     .teams-container,
-    .sponsors-img-container
-    {
+    .sponsors-img-container {
         flex-direction: column;
     }
 }
